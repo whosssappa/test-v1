@@ -1,0 +1,777 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131313;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex; /* Отображаем меню в строку на обычных экранах */
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li button {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    font-size: 54px;
+    height: auto;
+}
+
+.cta-button {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+
+
+.info-panel {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 50px 20px;
+    max-width: 1200px; /* Максимальная ширина плашки */
+    margin: 0 auto; /* Центрирование плашки */
+    border-radius: 10px; /* Закругленные углы для плашки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для плашки */
+
+}
+
+.info-item {
+    display: flex;
+    align-items: center; /* Вертикальное центрирование иконки и текста */
+}
+
+.info-icon {
+    width: 50px; /* Размер иконок */
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.info-text {
+    text-align: left; /* Выравнивание текста влево */
+    color: #131313;
+}
+
+.phone-number {
+    font-weight: bold;
+    color: #e67e22; /* Выделение номера телефона */
+    margin-top: 5px; /* Отступ сверху для номера телефона */
+}
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    margin: 80px 0;
+    padding-top: 200px;
+    
+    
+}
+
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    padding-left: 40px;
+    
+}
+  
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+  
+.about-content {
+    flex: 1;
+    text-align: center;
+    
+}
+  
+.about-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding-right: 60px;
+}
+  
+.about-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    padding-right: 60px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services {
+    text-align: center; /* Центрирует заголовок и текст */
+    margin: 80px 0; /* Отступы сверху и снизу */
+    padding-top: 200px;
+}
+
+.services h2 {
+    margin-bottom: 40px; /* Отступ под названием блока */
+    font-size: 48px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around; /* Распределяет элементы по горизонтали */
+    margin-bottom: 40px; /* Отступ под контейнером */
+}
+
+.service-item {
+    width: 30%; /* Ширина каждого элемента услуги */
+}
+
+.service-item-h3{
+    margin-bottom: 20px;
+}
+
+.service-item img {
+    width: 100%; /* Ширина изображения */
+    border-radius: 10px; /* Закругленные углы для изображений */
+    margin-bottom: 15px; /* Отступ между изображением и заголовком */
+}
+
+.custom-request {
+    margin-top: 20px; /* Отступ сверху для текста и кнопки */
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.custom-request-button {
+    background: #e67e22; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убирает рамку */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Указывает на кликабельность */
+    border-radius: 5px; /* Закругленные углы для кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.offerings {
+    text-align: center; /* Центрирует заголовок и текст */
+    margin: 80px 0; /* Отступы сверху и снизу */
+}
+
+.offerings h2 {
+    margin-bottom: 40px; /* Отступ под названием блока */
+    font-size: 48px;
+    padding-top: 200px;
+}
+
+.offerings-container {
+    display: flex;
+    justify-content: space-around; /* Распределяет элементы по горизонтали */
+}
+
+.offering-item {
+    width: 30%; /* Ширина каждого элемента */
+}
+
+.offering-number {
+    font-size: 48px; /* Размер шрифта для номера */
+    color: #e67e22; /* Цвет для выделения номера */
+    font-weight: bold; /* Жирный шрифт */
+    margin-bottom: 15px; /* Отступ между номером и заголовком */
+}
+
+.offering-item h3 {
+    font-size: 36px; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ между заголовком и текстом */
+}
+
+.offering-item p {
+    font-size: 16px; /* Размер текста */
+    line-height: 1.5; /* Высота строки для читаемости */
+}
+
+
+
+
+
+
+
+
+
+
+
+.reviews {
+    text-align: center; /* Центрирует заголовок */
+    margin: 80px 0; /* Отступы сверху и снизу */
+}
+
+.reviews h2 {
+    margin-bottom: 40px; /* Отступ под названием блока */
+    font-size: 48px;
+    padding-top: 200px;
+}
+
+.slider {
+    position: relative; /* Для позиционирования кнопок */
+    max-width: 1200px; /* Максимальная ширина слайдера */
+    margin: 0 auto; /* Центрирует слайдер */
+    overflow: hidden; /* Скрывает выходящие за пределы элементы */
+}
+
+.slides {
+    display: flex; /* Располагает слайды в ряд */
+    transition: transform 0.5s ease; /* Плавный переход при смене слайдов */
+}
+
+.slide {
+    min-width: 100%; /* Каждому слайду задается ширина 100% */
+}
+
+.slide img {
+    width: 100%; /* Изображение занимает всю ширину слайда */
+    border-radius: 10px; /* Закругленные углы для изображений */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    border: none; /* Убирает рамку */
+    padding: 10px;
+    cursor: pointer; /* Указывает на кликабельность */
+    font-size: 24px; /* Размер шрифта для кнопок */
+    border-radius: 5px; /* Закругленные углы для кнопок */
+}
+
+button.prev {
+    left: 10px; /* Позиция кнопки "Назад" */
+}
+
+button.next {
+    right: 10px; /* Позиция кнопки "Вперед" */
+}
+
+
+
+
+
+.map {
+    text-align: center; /* Центрирует заголовок */
+    margin: 80px 0; /* Отступы сверху и снизу */
+}
+
+.map h2 {
+    margin-bottom: 20px; /* Отступ под заголовком */
+    font-size: 48px;
+    padding-top: 200px;
+}
+
+.map-container {
+    width: 100%; /* Ширина контейнера карты */
+    max-width: 1200px; /* Максимальная ширина блока с картой */
+    height: 400px; /* Высота карты */
+    margin: 0 auto; /* Центрирует карту внутри блока */
+    border-radius: 10px; /* Закругленные углы для карты */
+    overflow: hidden; /* Скрывает переполнение */
+}
+
+
+
+
+.footer {
+    background-color: #333; /* Цвет фона футера */
+    color: white; /* Цвет текста */
+    padding: 40px 20px; /* Отступы внутри футера */
+    text-align: center; /* Центрирует текст */
+}
+
+.footer-container {
+    max-width: 1200px; /* Максимальная ширина футера */
+    margin: 0 auto; /* Центрирует футер */
+}
+
+.footer-info {
+    margin-bottom: 20px; /* Отступ между секциями */
+}
+
+.footer-social ul {
+    list-style: none; /* Убирает маркеры списка */
+    padding: 0; /* Убирает отступы */
+}
+
+.footer-social li {
+    display: inline; /* Отображает ссылки в ряд */
+    margin: 0 10px; /* Отступ между ссылками */
+}
+
+.footer-social a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+.footer-social a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+ 
+
+
+/* Медиа-запросы для адаптации под планшеты и телефоны */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block; /* Показываем бургер-меню на мобильных устройствах */
+    }
+
+    .nav-menu {
+        display: none; /* Скрываем стандартное меню */
+        flex-direction: column; /* Вертикальное расположение элементов меню */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 20px 0;
+        z-index: 1;
+    }
+
+    .nav-menu.show {
+        display: flex; /* Показываем меню при клике на бургер-меню */
+    }
+
+    .nav-menu li {
+        margin: 10px 0; /* Отступ между элементами меню */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block; /* Показываем бургер-меню на мобильных устройствах и планшетах */
+    }
+
+    .nav-menu {
+        display: none; /* Скрываем стандартное меню */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px; /* Уменьшает отступы для планшетов */
+    }
+
+    .hero h1 {
+        font-size: 36px; /* Уменьшает размер заголовка для планшетов */
+    }
+
+    .cta-button {
+        font-size: 16px; /* Уменьшает размер шрифта кнопки для планшетов */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 20px; /* Уменьшает отступы для мобильных */
+    }
+
+    .hero h1 {
+        font-size: 28px; /* Уменьшает размер заголовка для мобильных */
+    }
+
+    .cta-button {
+        font-size: 14px; /* Уменьшает размер шрифта кнопки для мобильных */
+    }
+}
+
+
+
+/* Медиа-запросы для адаптации блока "Info-panel" под планшеты и телефоны */
+@media (max-width: 768px) {
+    .info-panel {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        padding: 30px 15px; /* Уменьшение отступов для планшетов */
+    }
+
+    .info-item {
+        margin-bottom: 20px; /* Отступ между элементами */
+    }
+
+    .info-icon {
+        width: 40px; /* Уменьшение размера иконок для планшетов */
+    }
+
+    .info-text {
+        text-align: center; /* Центрирование текста на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-panel {
+        padding: 20px 10px; /* Уменьшение отступов для мобильных */
+    }
+
+    .info-item {
+        flex-direction: column; /* Вертикальное расположение элементов на мобильных */
+        align-items: center; /* Центрирование элементов */
+    }
+
+    .info-icon {
+        width: 30px; /* Уменьшение размера иконок для мобильных */
+        margin-bottom: 10px; /* Отступ снизу для иконок */
+    }
+
+    .info-text {
+        text-align: center; /* Центрирование текста на мобильных */
+    }
+
+    .phone-number {
+        font-size: 14px; /* Уменьшение размера шрифта для номера телефона */
+    }
+}
+
+
+
+
+
+/* Медиа-запросы для адаптации блока "О нас" под планшеты и телефоны */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: center; /* Центрирует элементы */
+        margin-top: 80px;
+    }
+
+    .about-image {
+        margin-right: 20px; /* Убирает отступ справа */
+        padding-left: 20px;
+        margin-bottom: 20px; /* Отступ снизу для изображения */
+    }
+
+    .about-content h2 {
+        font-size: 28px; /* Уменьшает размер заголовка для планшетов */
+        padding-left: 40px;
+    }
+
+    .about-content p {
+        font-size: 16px; /* Уменьшает размер текста для планшетов */
+        text-align: center;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h2 {
+        font-size: 24px; /* Уменьшает размер заголовка для мобильных */
+    }
+
+    .about-content p {
+        font-size: 14px; /* Уменьшает размер текста для мобильных */
+    }
+}
+
+
+
+
+
+/* Медиа-запросы для адаптации блока "Услуги" под планшеты и телефоны */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: center; /* Центрирует элементы */
+    }
+
+    .service-item {
+        width: 80%; /* Ширина элемента услуги на планшетах */
+        margin-bottom: 20px; /* Отступ между элементами */
+    }
+
+    .custom-request-button {
+        font-size: 14px; /* Уменьшает размер шрифта кнопки для планшетов */
+    }
+}
+
+@media (max-width: 480px) {
+    .services h2 {
+        font-size: 24px; /* Уменьшает размер заголовка для мобильных */
+    }
+
+    .service-item {
+        width: 100%; /* Ширина элемента услуги на мобильных */
+    }
+
+    .custom-request-button {
+        font-size: 12px; /* Уменьшает размер шрифта кнопки для мобильных */
+    }
+}
+
+
+
+
+
+/* Медиа-запросы для адаптации блока "Предложения" под планшеты и телефоны */
+@media (max-width: 768px) {
+    .offerings-container {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: center; /* Центрирует элементы */
+        margin-top: 80px;
+    }
+
+    .offering-item {
+        width: 80%; /* Ширина элемента на планшетах */
+        margin-bottom: 20px; /* Отступ между элементами */
+    }
+
+    .offering-number {
+        font-size: 36px; /* Уменьшение размера номера для планшетов */
+    }
+
+    .offering-item h3 {
+        font-size: 20px; /* Уменьшение размера заголовка для планшетов */
+    }
+
+    .offering-item p {
+        font-size: 14px; /* Уменьшение размера текста для планшетов */
+    }
+}
+
+@media (max-width: 480px) {
+    .offerings h2 {
+        font-size: 36px; /* Уменьшение размера заголовка для мобильных */
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .offering-item {
+        width: 100%; /* Ширина элемента на мобильных */
+        
+    }
+
+    .offering-number {
+        font-size: 28px; /* Уменьшение размера номера для мобильных */
+    }
+
+    .offering-item h3 {
+        font-size: 24px; /* Уменьшение размера заголовка для мобильных */
+    }
+
+    .offering-item p {
+        font-size: 18px; /* Уменьшение размера текста для мобильных */
+    }
+}
+
+
+
+/* Медиа-запросы для адаптации блока "Отзывы" под планшеты и телефоны */
+@media (max-width: 768px) {
+    .reviews h2 {
+        font-size: 28px; /* Уменьшение размера заголовка для планшетов */
+    }
+
+    button.prev, button.next {
+        font-size: 20px; /* Уменьшение размера шрифта для кнопок на планшетах */
+        padding: 8px; /* Уменьшение отступов для кнопок на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews {
+        margin: 40px 40px; /* Уменьшение отступов для мобильных */
+        padding-top: 80px;
+    }
+
+    .reviews h2 {
+        font-size: 24px; /* Уменьшение размера заголовка для мобильных */
+        font-size: 36px;
+    }
+
+    button.prev, button.next {
+        font-size: 18px; /* Уменьшение размера шрифта для кнопок на мобильных */
+        padding: 6px; /* Уменьшение отступов для кнопок на мобильных */
+    }
+}
+
+
+
+/* Медиа-запросы для адаптации блока "Карта" под планшеты и телефоны */
+@media (max-width: 768px) {
+    .map {
+        margin: 10px 10px; /* Уменьшение отступов для планшетов */
+    }
+
+    .map-container {
+        height: 300px; /* Уменьшение высоты карты для планшетов */
+        
+    }
+
+    .map h2 {
+        font-size: 24px; /* Уменьшение размера заголовка для планшетов */
+    }
+}
+
+@media (max-width: 480px) {
+    .map {
+        margin: 0px 10px; /* Уменьшение отступов для мобильных */
+        padding-top: 100px;
+        
+        
+    }
+
+    .map-container {
+        height: 200px; /* Уменьшение высоты карты для мобильных */
+        padding-bottom: 20px;
+        
+    }
+
+    .map h2 {
+        font-size: 20px; /* Уменьшение размера заголовка для мобильных */
+        font-size: 36px;
+        padding-top: 80px;
+    }
+}
+
+
+/* Медиа-запросы для адаптации футера под планшеты и телефоны */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px; /* Уменьшение отступов для планшетов */
+    }
+
+    .footer-info {
+        font-size: 14px; /* Уменьшение размера текста для планшетов */
+    }
+
+    .footer-social li {
+        margin: 0 8px; /* Уменьшение отступов между ссылками для планшетов */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px; /* Уменьшение отступов для мобильных */
+    }
+
+    .footer-info {
+        font-size: 12px; /* Уменьшение размера текста для мобильных */
+    }
+
+    .footer-social li {
+        margin: 0 6px; /* Уменьшение отступов между ссылками для мобильных */
+    }
+}

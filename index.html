@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перетяжка салона и утепление грузовых авто</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html"  class="logo"> <img src="img/tg.png" alt="logo"></a> 
+        <div class="title">Название</div>
+        <header>
+           
+            <nav>
+                <div class="burger-menu">
+                    <div class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Наши услуги</a></li>
+                    <li><a href="#offerings">Наша уникальность</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#map">Контакты</a></li>
+                    <li><button>Связаться с нами</button></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+    </header>
+
+    <section class="hero">
+        <h1>Перетяжка салона и утепление грузовых авто</h1>
+        <button class="cta-button">Получите консультацию</button>
+    </section>
+
+
+
+
+
+    <div class="info-panel">
+        <div class="column">
+            <div class="info-item">
+                <img src="img/tg.png" alt="Иконка 1" class="info-icon">
+                <div class="info-text">
+                    <p>Получите бесплатную консультацию сейчас!</p>
+                    <p class="phone-number">+7 (123) 456-78-90</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="info-item">
+                <img src="img/tg.png" alt="Иконка 2" class="info-icon">
+                <div class="info-text">
+                    <p>Консультация в любое время!</p>
+                    <p class="phone-number">+7 (123) 456-78-90</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="info-item">
+                <img src="img/tg.png" alt="Иконка 3" class="info-icon">
+                <div class="info-text">
+                    <p>Мы рядом с вами!</p>
+                    <p class="phone-number">+7 (123) 456-78-90</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="about">
+        <div class="about-image">
+          <img src="img/placeholder.png" alt="О нас">
+        </div>
+        <div class="about-content">
+          <h2>О нас</h2>
+          <p>Компания 'Перетяжкин' с опытом более 2 лет и более 10 пятизвездочными отзывами.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Наши услуги</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <img src="img/placeholder.png" alt="Услуга 1">
+                <h3 class="service-item-h3">Услуга 1</h3>
+                <p>Описание услуги 1.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/placeholder.png" alt="Услуга 2">
+                <h3 class="service-item-h3">Услуга 2</h3>
+                <p>Описание услуги 2.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/placeholder.png" alt="Услуга 3">
+                <h3 class="service-item-h3">Услуга 3</h3>
+                <p>Описание услуги 3.</p>
+            </div>
+        </div>
+        <div class="custom-request">
+            <p>Не стандартный запрос?</p>
+            <button class="custom-request-button">Связаться с нами</button>
+        </div>
+    </section>
+    
+    
+    
+
+
+    <section class="offerings">
+        <h2>Наша уникальность</h2>
+        <div class="offerings-container">
+            <div class="offering-item">
+                <div class="offering-number">01</div>
+                <h3>Заголовок 1</h3>
+                <p>Текст 1</p>
+            </div>
+            <div class="offering-item">
+                <div class="offering-number">02</div>
+                <h3>Заголовок 2</h3>
+                <p>Текст 2</p>
+            </div>
+            <div class="offering-item">
+                <div class="offering-number">03</div>
+                <h3>Заголовок 3</h3>
+                <p>Текст 3</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <section class="reviews">
+        <h2>Отзывы</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/placeholder.png" alt="Отзыв 1">
+                </div>
+                <div class="slide">
+                    <img src="img/placeholder.png" alt="Отзыв 2">
+                </div>
+                <div class="slide">
+                    <img src="img/placeholder.png" alt="Отзыв 3">
+                </div>
+                <!-- Добавьте больше слайдов по мере необходимости -->
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    
+    <section class="map">
+        <h2>Наше местоположение</h2>
+        <div id="map" class="map-container"></div>
+    </section>
+    
+    
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Компания 'Перетяжкин'</h3>
+                <p>&copy; 2024 Все права защищены.</p>
+                <p>Телефон: +7 (123) 456-78-90</p>
+                <p>Email: info@peretazhkin.ru</p>
+            </div>
+            <div class="footer-social">
+                <h3>Мы в социальных сетях</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.vk.com" target="_blank">ВКонтакте</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+      
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
